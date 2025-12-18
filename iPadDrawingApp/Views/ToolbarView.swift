@@ -70,7 +70,7 @@ struct ToolbarView: View {
                     .font(.caption2)
                 Slider(value: $strokeWidth, in: 1...20, step: 1)
                     .frame(width: 100)
-                    .onChange(of: strokeWidth) { _ in
+                    .onChange(of: strokeWidth) {
                         onToolChange()
                     }
                 Text("\(Int(strokeWidth))pt")
